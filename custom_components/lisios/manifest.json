@@ -1,0 +1,10 @@
+{
+  "domain": "lisios",
+  "name": "Lisios",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/nilisos/hass-lisios-bridge",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/nilisos/hass-lisios-bridge/issues",
+  "version": "0.1.0"
+}
