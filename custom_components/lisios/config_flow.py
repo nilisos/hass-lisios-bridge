@@ -72,7 +72,7 @@ class LisiosConfigFlow(ConfigFlow, domain=DOMAIN):
             errors=errors,
         )
 
-    async def async_step_reauth(self, entry_data: dict[str, Any]) -> ConfigFlowResult:
+    async def async_step_reauth(self, _entry_data: dict[str, Any]) -> ConfigFlowResult:
         """Perform reauthentication upon an API authentication error."""
         return await self.async_step_reauth_confirm()
 

@@ -60,7 +60,7 @@ ENTITY_DESCRIPTIONS = [
 
 
 async def async_setup_entry(
-    hass: HomeAssistant,
+    _hass: HomeAssistant,
     entry: LisiosConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
