@@ -6,7 +6,8 @@ import asyncio
 from datetime import timedelta
 from typing import TYPE_CHECKING
 
-from aiohttp import ClientError, ClientResponseError
+from aiohttp import ClientError
+from aiohttp.web import HTTPForbidden
 from homeassistant.exceptions import ConfigEntryAuthFailed
 from homeassistant.helpers import device_registry
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
@@ -76,6 +77,6 @@ class LisiosDataUpdateCoordinator(DataUpdateCoordinator[LisiosCoordinatorData]):
             )
         except ClientError as ex:
             LOGGER.exception("Failed to fetch data from Lisios API")
-            if isinstance(ex, ClientResponseError) and ex.status == 403:
+            if isinstance(ex, HTTPForbidden):
                 raise ConfigEntryAuthFailed from ex
             raise UpdateFailed from ex
