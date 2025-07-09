@@ -1,5 +1,5 @@
 {
-    "name": "lisios/lisios-home-assistant",
+    "name": "nilisos/hass-lisios-bridge",
     "image": "mcr.microsoft.com/devcontainers/python:3.13",
     "postCreateCommand": "scripts/setup",
     "forwardPorts": [
