@@ -1,0 +1,12 @@
+{
+    "entity": {
+        "binary_sensor": {
+            "flow": {
+                "default": "mdi:water-off",
+                "state": {
+                    "on": "mdi:water"
+                }
+            }
+        }
+    }
+}

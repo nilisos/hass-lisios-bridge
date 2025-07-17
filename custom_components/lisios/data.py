@@ -34,6 +34,7 @@ class WasserAlarm:
     acc_temp: float
     amb_temp: float
     pipe_temp_mean: float
+    is_flow: bool
 
 
 @dataclass
