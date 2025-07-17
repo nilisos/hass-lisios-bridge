@@ -20,6 +20,11 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "flow": {
+                "name": "Flow"
+            }
+        },
         "sensor": {
             "accelerometer_temperature": {
                 "name": "Accelerometer Temperature"
