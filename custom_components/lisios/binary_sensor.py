@@ -36,6 +36,18 @@ ENTITY_DESCRIPTIONS = [
         translation_key="flow",
         value_fn=lambda data: data.is_flow,
     ),
+    LisiosBinarySensorEntityDescription(
+        key="frozen",
+        has_entity_name=True,
+        translation_key="frozen",
+        value_fn=lambda data: data.is_frozen,
+    ),
+    LisiosBinarySensorEntityDescription(
+        key="leakage",
+        has_entity_name=True,
+        translation_key="leakage",
+        value_fn=lambda data: data.is_leakage,
+    ),
 ]
 
 

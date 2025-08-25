@@ -50,6 +50,8 @@ class LisiosDataUpdateCoordinator(DataUpdateCoordinator[LisiosCoordinatorData]):
             amb_temp=data["t_a"],
             pipe_temp_mean=data["t_p1_2_3_mean"],
             is_flow=data["f_f_accu"] != 0,
+            is_frozen=data["f_fr_acc"] != 0,
+            is_leakage=data["f_l_accu"] != 0,
         )
 
     async def _async_update_data(self) -> LisiosCoordinatorData:
