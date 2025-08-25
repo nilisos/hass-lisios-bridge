@@ -1,0 +1,46 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "description": "Wenn Sie Hilfe bei der Konfiguration benötigen, schauen Sie hier: https://github.com/nilisos/hass-lisios-bridge",
+                "data": {
+                    "username": "Benutzername",
+                    "password": "Passwort"
+                }
+            }
+        },
+        "error": {
+            "auth": "Benutzername/Passwort ist falsch.",
+            "connection": "Verbindung zum Server konnte nicht hergestellt werden.",
+            "unknown": "Unbekannter Fehler ist aufgetreten."
+        },
+        "abort": {
+            "already_configured": "Dieser Eintrag ist bereits konfiguriert.",
+            "reauth_successful": "Die erneute Authentifizierung war erfolgreich."
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "flow": {
+                "name": "Wasserfluss"
+            },
+            "frozen": {
+                "name": "Frost"
+            },
+            "leakage": {
+                "name": "Leckage"
+            }
+        },
+        "sensor": {
+            "accelerometer_temperature": {
+                "name": "Beschleunigungssensor Temperatur"
+            },
+            "ambient_temperature": {
+                "name": "Umgebungstemperatur"
+            },
+            "pipe_temperature": {
+                "name": "Rohrtemperatur"
+            }
+        }
+    }
+}
