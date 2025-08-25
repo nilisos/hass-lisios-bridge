@@ -6,6 +6,18 @@
                 "state": {
                     "on": "mdi:water"
                 }
+            },
+            "frozen": {
+                "default": "mdi:snowflake-off",
+                "state": {
+                    "on": "mdi:snowflake"
+                }
+            },
+            "leakage": {
+                "default": "mdi:check",
+                "state": {
+                    "on": "mdi:pipe-leak"
+                }
             }
         }
     }

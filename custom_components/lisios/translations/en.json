@@ -23,6 +23,12 @@
         "binary_sensor": {
             "flow": {
                 "name": "Flow"
+            },
+            "frozen": {
+                "name": "Frozen"
+            },
+            "leakage": {
+                "name": "Leakage"
             }
         },
         "sensor": {

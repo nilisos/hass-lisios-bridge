@@ -35,6 +35,8 @@ class WasserAlarm:
     amb_temp: float
     pipe_temp_mean: float
     is_flow: bool
+    is_frozen: bool
+    is_leakage: bool
 
 
 @dataclass
